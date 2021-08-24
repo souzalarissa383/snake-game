@@ -1,6 +1,7 @@
 body{
-    font-family: 'Roboto Slab', serif;
-    background: 
+    font-family: "Audiowide", sans-serif;
+
+    font-size: 1rem;
     color: white;
     height: 95vh;
     width: 95vw;
@@ -8,9 +9,12 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:#1b1d20;
+    background:#1b1d20;
     
 }
+
+
+
 /*color: rgb(52, 165, 52);
 
     margin: 0;*/
