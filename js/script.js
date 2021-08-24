@@ -8,13 +8,15 @@ snake[0] = {
     y: 8 * box
 }
 let direction = "right";
+//array
 let food ={
     x: Math.floor(Math.random() * 15 + 1) * box,
     y: Math.floor(Math.random() * 15 + 1) * box
 }
+//desenha o retângulo usando x e y e a largura e altura setadas
 function criarBG(){
     context.fillStyle = "lightgreen";
-    context.fillRect(0, 0, 16 * box, 16 * box);//desenha o retângulo usando x e y e a largura e altura setadas
+    context.fillRect(0, 0, 16 * box, 16 * box);
 }
 
 function crirCobrinha(){
@@ -23,6 +25,12 @@ function crirCobrinha(){
         context.fillRect(snake[i].x, snake[i].y, box, box);
     }
 }
+//desenhar a comida
+function drawFood (){
+    context.fillStyle = "red";
+    context.fillRect(food.x, food.y, box, box);
+}
+
 //evento de click para chamar a funcao update 
 document.addEventListener('Keydown', update);
 //com isso passando como argumento o evento de tecla
