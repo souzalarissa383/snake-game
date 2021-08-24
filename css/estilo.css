@@ -1,10 +1,17 @@
 body{
+    font-family: 'Roboto Slab', serif;
+    background: 
+    color: white;
     height: 95vh;
     width: 95vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:white;
-    color: rgb(52, 165, 52);
+    background-color:#1b1d20;
+    
 }
+/*color: rgb(52, 165, 52);
+
+    margin: 0;*/
+    
