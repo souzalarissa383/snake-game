@@ -60,9 +60,16 @@ function iniciarJogo(){
     /*cordenadas da cobrinha*/
     if(direction == "right") snakeX += box;
     if(direction == "left") snakeX -= box;
-    if (direction == "up") snakeY -= box;
+    if(direction == "up") snakeY -= box;
     if(direction == "down") snakeY += box;
+
     
+    for(i = 1; i < snake.length; i++){
+        if(snake[0].x == snake[i].x && snake[0].y == snake[i].y){
+            clearInterval(jogo);
+            alert('Game Over :(');
+        }
+    }
     /* funcao pop para retirar o ultimo elemento do lancamento*/
     snake.pop();
 
